@@ -1,12 +1,23 @@
 // src/App.jsx
-import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom"; 
+import Home from "./pages/Home";
+import SignIn from "./pages/SignIn";
+import SingOut from "./pages/SingOut";
+import About from "./pages/About";
+import Profile from "./pages/Profile";
+export const App = () => {
+    return <BrowserRouter>
+    
+    <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/sing-out" element={<SingOut />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/about" element={<About />} />
 
-const App = () => {
-    return (
-        <div>
-            <h1 className="text-pink-500">Hello, World!</h1>
-        </div>
-    );
-};
+    </Routes>
+    
+    </BrowserRouter>;
+}
 
 export default App; // This line is crucial for default export
