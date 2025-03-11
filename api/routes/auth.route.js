@@ -3,7 +3,7 @@ import { signup } from '../controllers/auth.controller.js';
 
 const router = express.Router();
 
-router.post('/signup', async (req, res) => {
+router.post('/sign-up', async (req, res) => {
     res.json({ message: "Signup route working!" });
 });
 
