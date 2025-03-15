@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
+    
     <header className='bg-slate-200 shadow-md'>
       <div className='flex justify-between items-center mx-auto p-3'>
       <Link to='/'>
@@ -20,6 +21,8 @@ export default function Header() {
           />
           <FaSearch className='text-slate-600'/>
         </form>
+
+        
         
   <ul className='flex gap-4'> 
       <Link to='/'>
