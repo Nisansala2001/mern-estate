@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 
 const userSchema = new mongoose.Schema({
+    
     username: {
         type: String,
         required: true,
@@ -18,6 +19,7 @@ const userSchema = new mongoose.Schema({
         required: true,
     }
 }, { timestamps: true }); // Moved inside the schema options
+
 
 const User = mongoose.model('User', userSchema);
 
