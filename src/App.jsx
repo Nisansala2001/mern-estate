@@ -4,8 +4,10 @@ import Home from "./pages/Home";
 
 import SignIn from "./pages/SignIn";
 import SignOut from "./pages/SignOut"; // Correctly fixed typo
+
 import About from "./pages/About";
 import Profile from "./pages/Profile";
+
 
 import Header from "./components/Header"; // Correctly fixed typo
 
