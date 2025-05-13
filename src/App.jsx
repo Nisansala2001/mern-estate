@@ -8,6 +8,7 @@ import Profile from "./pages/Profile";
 import Header from "./components/Header"; // Correctly fixed typo
 const App = () => {
    return (
+      
         <BrowserRouter>
             <Header /> {/* Use the Header component here */}
             <Routes>
